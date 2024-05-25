@@ -1,1 +1,1 @@
-# DP-IQA
+# IQA
