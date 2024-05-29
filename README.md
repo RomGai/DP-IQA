@@ -27,6 +27,12 @@ We have done all testing and development using an A100 GPU. But for this demo, a
 
 Download the [Koniq-10k](https://github.com/subpic/koniq) dataset. Make sure the path of its csv file is '/koniq/koniq10k_distributions_sets.csv', and the root path of images is 'koniq/1024x768' in your project.
 
-**Download checkpoints**
+**Download checkpoint**
 
-[DP-IQA (student model)](https://drive.google.com/file/d/1PNznQU-vuS2ThA6tWT-fy3DmzPIuJRTN/view?usp=drive_link). Put it into '/trained_models'.
+Put [DP-IQA (student model)](https://drive.google.com/file/d/1PNznQU-vuS2ThA6tWT-fy3DmzPIuJRTN/view?usp=drive_link) to '/trained_models'.
+
+**Run this demo**
+```
+python koniq_demo.py
+```
+
