@@ -10,24 +10,18 @@ Abstract: *Image quality assessment (IQA) plays a critical role in selecting hig
 We recommend installing 64-bit Python 3.8 and [PyTorch 1.12.0](https://pytorch.org/get-started/locally/). On a CUDA GPU machine, the following will do the trick:
 
 ```
-pip install taming-transformers
-pip install clip
-pip install ftfy
-pip install omegaconf
-pip install einops
-pip install torchmetrics
-pip install pytorch-lightning
-pip install kornia
-pip install diffusers
-pip install accelerate
-pip install rawpy
-pip install timm
-pip install torchvision
 pip install transformers==4.31.0
+pip install torchvision
+pip install ftfy
+pip install einops
+pip install scipy
+pip install pandas
+pip install sklearn
+pip install onnxruntime-gpu
+pip install onnx
 ```
 
-We have done all testing and development using an A100 GPU. But for this demo, a 16G GPU is enough for testing with small batch size.
-
+We have done all testing and development using an A100 GPU. But for this demo, any GPU that supports CUDA is enough.
 
 **Download dataset**
 
@@ -35,5 +29,4 @@ Download the [Koniq-10k](https://github.com/subpic/koniq) dataset. Make sure the
 
 **Download checkpoints**
 
-1. DP-IQA (teacher model):
-2. Student model: 
+[DP-IQA (student model)](https://drive.google.com/file/d/1PNznQU-vuS2ThA6tWT-fy3DmzPIuJRTN/view?usp=drive_link)
