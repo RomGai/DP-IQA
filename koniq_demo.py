@@ -55,8 +55,8 @@ class KoniqDataset(Dataset):
         return image,image_score.float()
 
 transform = transforms.Compose([
-    transforms.Resize((512, 512)),  # 重新调整图像大小
-    transforms.ToTensor(),  # 将图像转换为PyTorch张量
+    transforms.Resize((512, 512)),
+    transforms.ToTensor(),
 ])
 
 t_model=torch.load('trained_models/koniq_teacher_model_pack.pth')
@@ -77,7 +77,7 @@ test_indices = torch.load('trained_models/koniq_test_indices.pth')
 
 test_dataset = torch.utils.data.Subset(koniq_dataset, test_indices)
 
-test_dataloader = DataLoader(test_dataset, batch_size=batch_size, shuffle=True)#num_workers=4
+test_dataloader = DataLoader(test_dataset, batch_size=batch_size, shuffle=True)
 
 test_max_r=0
 test_max_srocc=0
