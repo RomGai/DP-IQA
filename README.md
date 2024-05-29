@@ -1,6 +1,6 @@
 # DP-IQA: Utilizing Diffusion Prior for Blind Image Quality Assessment in the Wild
 
-由于论文还在审核，我们暂时只公布一个简单的demo以及在KonIQ-10k数据集上训练的checkpoints示例，其具备一定的实用价值。完整版的代码已准备好，当论文被接受后将立即上传。
+The paper is still under review, we are temporarily releasing only a simple demo and sample checkpoints trained on the KonIQ-10k dataset. The complete code and checkpoints are ready and will be uploaded immediately upon acceptance of the paper.
 
 ![Framework](/figures/framework.jpg)
 
