@@ -8,6 +8,7 @@ import gc
 from scipy.stats import spearmanr
 import scipy
 
+print("koniq")
 device="cuda"
 
 def SRCC(tensor1, tensor2):
@@ -58,11 +59,11 @@ transform = transforms.Compose([
     transforms.ToTensor(),  # 将图像转换为PyTorch张量
 ])
 
-t_model=torch.load('trained_model/koniq_teacher_model_pack.pth')
+t_model=torch.load('trained_models/koniq_teacher_model_pack.pth')
 t_model.to(device)
 t_model.requires_grad_(False)
 
-s_model=torch.load('trained_model/koniq_student_model_pack.pth')
+s_model=torch.load('trained_models/koniq_student_model_pack.pth')
 s_model.to(device)
 s_model.requires_grad_(False)
 
@@ -72,7 +73,7 @@ csv_dir = 'koniq/koniq10k_distributions_sets.csv'
 img_dir = 'koniq/1024x768'
 koniq_dataset = KoniqDataset(csv_file=csv_dir, root_dir=img_dir,transform=transform)
 
-test_indices = torch.load('trained_model/koniq_test_indices.pth')
+test_indices = torch.load('trained_models/koniq_test_indices.pth')
 
 test_dataset = torch.utils.data.Subset(koniq_dataset, test_indices)
 
@@ -83,6 +84,7 @@ test_max_srocc=0
 train_max_r=0
 train_max_srocc=0
 
+print("start test")
 s_model.eval()
 pos = 0
 for jpeg_images, gt_scores in test_dataloader:
