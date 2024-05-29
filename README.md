@@ -29,4 +29,4 @@ Download the [Koniq-10k](https://github.com/subpic/koniq) dataset. Make sure the
 
 **Download checkpoints**
 
-[DP-IQA (student model)](https://drive.google.com/file/d/1PNznQU-vuS2ThA6tWT-fy3DmzPIuJRTN/view?usp=drive_link)
+[DP-IQA (student model)](https://drive.google.com/file/d/1PNznQU-vuS2ThA6tWT-fy3DmzPIuJRTN/view?usp=drive_link). Put it into '/trained_models'.
