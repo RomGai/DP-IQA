@@ -24,7 +24,10 @@ pip install torchvision
 pip install transformers==4.31.0
 ```
 
+The paper is still under review, we are temporarily releasing only a simple demo and sample checkpoints trained on the KonIQ-10k dataset. The complete code and checkpoints are ready and will be uploaded immediately upon acceptance of the paper.
+
 We have done all testing and development using an A100 GPU. But for this demo, a 16G GPU is enough for testing with small batch size.
+
 
 **Download dataset**
 
