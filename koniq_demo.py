@@ -5,7 +5,7 @@ from torch.utils.data import Dataset, DataLoader
 import os
 import pandas as pd
 import gc
-from scipy.stats import spearmanr
+from scipy.stats import spearmanr,pearsonr
 import scipy
 import onnxruntime as ort
 
@@ -23,6 +23,7 @@ def SRCC(tensor1, tensor2):
     srcc, _ = spearmanr(rank1, rank2)
 
     return srcc
+
 
 def PLCC(tensor1, tensor2):
     x_mean = tensor1.mean()
@@ -95,20 +96,21 @@ for jpeg_images, gt_scores in test_dataloader:
         s_score=torch.tensor(s_score)
 
         if (pos == 1):
-            s_all_scores = s_score[0]
+            s_all_scores = s_score
             all_gt_scores = gt_scores
         else:
-            s_all_scores = torch.cat([s_all_scores, s_score[0]], dim=0)
+            s_all_scores = torch.cat([s_all_scores, s_score], dim=0)
             all_gt_scores = torch.cat([all_gt_scores, gt_scores], dim=0)
 
         del jpeg_images, s_score,gt_scores
         gc.collect()
         torch.cuda.empty_cache()
 
-
+s_all_scores=s_all_scores.to(device)
+all_gt_scores=all_gt_scores.to(device)
 s_plcc=PLCC(s_all_scores,all_gt_scores)
 s_srcc = SRCC(s_all_scores,all_gt_scores)
 
-print("student test plcc:" + str(s_plcc) + "  srocc:" + str(s_srcc))
+print("student test plcc:" + str(s_plcc.item()) + "  srocc:" + str(s_srcc))
 
 
