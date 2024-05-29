@@ -91,7 +91,6 @@ for jpeg_images, gt_scores in test_dataloader:
 
         gt_scores = gt_scores.view(bsz, 1).float().to(device)
 
-        # 运行推理
         s_score,_ = ort_session.run(None, {'input': jpeg_images})
         s_score=torch.tensor(s_score)
 
