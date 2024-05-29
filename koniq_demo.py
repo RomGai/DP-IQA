@@ -9,7 +9,8 @@ from scipy.stats import spearmanr
 import scipy
 import onnxruntime as ort
 
-print("koniq5")
+print("koniq")
+
 device="cuda"
 
 def SRCC(tensor1, tensor2):
