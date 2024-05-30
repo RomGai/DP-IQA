@@ -31,7 +31,7 @@ Download the [Koniq-10k](https://github.com/subpic/koniq) dataset. Make sure the
 
 Put [DP-IQA (student model)](https://drive.google.com/file/d/1PNznQU-vuS2ThA6tWT-fy3DmzPIuJRTN/view?usp=drive_link) to '/trained_models'.
 
-The checkpoint provided in the demo is in .onnx format and therefore does not include the code that defines the model. The codes of models' definition will be uploaded along with the conventional format (e.g., .pth) checkpoints after the paper is accepted.
+The checkpoint provided in the demo is in .onnx format and therefore does not include the code that defines the model. The code of models' definition will be uploaded along with the conventional format (e.g., .pth) checkpoints after the paper is accepted.
 
 **Run this demo**
 ```
