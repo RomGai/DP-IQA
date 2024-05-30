@@ -31,7 +31,7 @@ For zero-shot testing on CLIVE dataset, please download the [CLIVE](https://live
 
 **Download checkpoint**
 
-Put [DP-IQA (student model)](https://drive.google.com/file/d/1PNznQU-vuS2ThA6tWT-fy3DmzPIuJRTN/view?usp=drive_link) to '/trained_models'.
+Put [DP-IQA (student model trained on KonIQ-10k)](https://drive.google.com/file/d/1PNznQU-vuS2ThA6tWT-fy3DmzPIuJRTN/view?usp=drive_link) to '/trained_models'.
 
 The checkpoint provided in the demo is in .onnx format and therefore does not include the code that defines the model. The code of models' definition will be uploaded along with the conventional format (e.g., .pth) checkpoints after the paper is accepted.
 
