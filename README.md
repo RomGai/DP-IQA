@@ -33,7 +33,7 @@ Put [DP-IQA (student model)](https://drive.google.com/file/d/1PNznQU-vuS2ThA6tWT
 
 The checkpoint provided in the demo is in .onnx format and therefore does not include the code that defines the model. The code of models' definition will be uploaded along with the conventional format (e.g., .pth) checkpoints after the paper is accepted.
 
-**Run this demo**
+# Run this demo
 ```
 python koniq_demo.py
 ```
