@@ -25,7 +25,9 @@ We have done all testing and development using an A100 GPU. But for this demo, a
 
 **Download dataset**
 
-Download the [Koniq-10k](https://github.com/subpic/koniq) dataset. Make sure the path of its csv file is '/koniq/koniq10k_distributions_sets.csv', and the root path of images is 'koniq/1024x768' in your project.
+Download the [Koniq-10k](https://github.com/subpic/koniq) dataset. Make sure the path of its .csv file is '/koniq/koniq10k_distributions_sets.csv', and the root path of images is 'koniq/1024x768' in your project.
+
+For zero-shot testing on CLIVE dataset, please download the [CLIVE](https://live.ece.utexas.edu/research/ChallengeDB/index.html) dataset. Make sure the root path of its .mat files is 'clive/ChallengeDB_release/Data', and the root path of images is 'clive/ChallengeDB_release/Images' in your project.
 
 **Download checkpoint**
 
@@ -36,5 +38,11 @@ The checkpoint provided in the demo is in .onnx format and therefore does not in
 # Run this demo
 ```
 python koniq_demo.py
+```
+
+For zero-shot testing on CLIVE dataset
+
+```
+python koniq_zeroshot_demo.py
 ```
 
