@@ -25,7 +25,7 @@ We have done all testing and development using an A100 GPU. But for this demo, a
 
 **Download dataset**
 
-Download the [Koniq-10k](https://osf.io/hcsdy/) dataset (OSF Storage -> database -> 1024x768). Make sure the path of its .csv file is '/koniq/koniq10k_distributions_sets.csv', and the root path of images is 'koniq/1024x768' in your project.
+Download the [KonIQ-10k](https://osf.io/hcsdy/) dataset (OSF Storage -> database -> 1024x768). Make sure the path of its .csv file is '/koniq/koniq10k_distributions_sets.csv', and the root path of images is 'koniq/1024x768' in your project.
 
 For zero-shot testing on CLIVE dataset, please download the [CLIVE](https://live.ece.utexas.edu/research/ChallengeDB/index.html) dataset. Make sure the root path of its .mat files is 'clive/ChallengeDB_release/Data', and the root path of images is 'clive/ChallengeDB_release/Images' in your project.
 
