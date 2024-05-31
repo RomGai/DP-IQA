@@ -1,4 +1,4 @@
-# DP-IQA: Utilizing Diffusion Prior for Blind Image Quality Assessment in the Wild
+# DP-IQA: Utilizing Diffusion Prior for Blind Image Quality Assessment in the Wild [[ArXiv](https://arxiv.org/abs/2405.19996)]
 
 ![Framework](/figures/framework.jpg)
 
