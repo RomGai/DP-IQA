@@ -48,3 +48,13 @@ For zero-shot testing on CLIVE dataset:
 python koniq_zeroshot_demo.py
 ```
 
+# Citation
+
+```
+@article{fu2024dp,
+  title={DP-IQA: Utilizing Diffusion Prior for Blind Image Quality Assessment in the Wild},
+  author={Fu, Honghao and Wang, Yufei and Yang, Wenhan and Wen, Bihan},
+  journal={arXiv preprint arXiv:2405.19996},
+  year={2024}
+}
+```
