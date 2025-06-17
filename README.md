@@ -35,13 +35,13 @@ We have done all testing and development using an A100 GPU.
 python gene_text_embedding.py
 ```
 
-2. Train DP-IQA models.
+2. Train DP-IQA models
 
 ```
 train_dpiqa.py
 ```
 
-3. Train student models.
+3. Train student models
 
 ```
 train_student.py
