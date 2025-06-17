@@ -47,15 +47,17 @@ train_dpiqa.py
 train_student.py
 ```
 
+Please note that, to reduce the overall runtime of the 'train_dpiqa.py' script, validation is set by default to occur after each training epoch. However, due to the small batch size, the model undergoes frequent updates within each epoch, often reaching its optimal performance midway through a certain epoch, followed by a slight decline in performance. To ensure the best model is captured, it is recommended to perform validation every 250 training steps or fewer.
+
 # Checkpoints
 
-**KonIQ-10K** [[DP-IQA]](https://drive.google.com/file/d/18G9bcCogpTGXy1VZnBKOxQT8aXnhHNKB/view?usp=sharing) [[Student]](https://drive.google.com/file/d/1j8P0eoJDLWbQgjZ4jIat8ZScgDaT1O11/view?usp=sharing)
+**KonIQ-10K.** [[DP-IQA]](https://drive.google.com/file/d/18G9bcCogpTGXy1VZnBKOxQT8aXnhHNKB/view?usp=sharing) [[Student]](https://drive.google.com/file/d/1j8P0eoJDLWbQgjZ4jIat8ZScgDaT1O11/view?usp=sharing)
 
-**LIVEC** [[DP-IQA]](https://drive.google.com/file/d/19EimoPFyV5lUIMCnafmw0ZQXq_Ck_-Y8/view?usp=sharing) [[Student]](https://drive.google.com/file/d/1OpeTcuzAnvY3Xq1JncAITvK08VhVJoZQ/view?usp=sharing)
+**LIVEC.** [[DP-IQA]](https://drive.google.com/file/d/19EimoPFyV5lUIMCnafmw0ZQXq_Ck_-Y8/view?usp=sharing) [[Student]](https://drive.google.com/file/d/1OpeTcuzAnvY3Xq1JncAITvK08VhVJoZQ/view?usp=sharing)
 
-**LIVEFB** [[DP-IQA]](https://drive.google.com/file/d/1-dYKKIavLky_CELMahEhbcuNdR6dYO46/view?usp=sharing) [[Student]](https://drive.google.com/file/d/1jxByr3HFOlf3OplcdgTTZSOI14WsuCF1/view?usp=sharing)
+**LIVEFB.** [[DP-IQA]](https://drive.google.com/file/d/1-dYKKIavLky_CELMahEhbcuNdR6dYO46/view?usp=sharing) [[Student]](https://drive.google.com/file/d/1jxByr3HFOlf3OplcdgTTZSOI14WsuCF1/view?usp=sharing)
 
-**SPAQ** [[DP-IQA]](https://drive.google.com/file/d/1-k-UdTp4343tiAlJB-NMQNVnXL8WC-Rk/view?usp=sharing) [[Student]](https://drive.google.com/file/d/18CK__MCTmFPr9US1Idne1mZxHLh8uNYA/view?usp=sharing)
+**SPAQ.** [[DP-IQA]](https://drive.google.com/file/d/1-k-UdTp4343tiAlJB-NMQNVnXL8WC-Rk/view?usp=sharing) [[Student]](https://drive.google.com/file/d/18CK__MCTmFPr9US1Idne1mZxHLh8uNYA/view?usp=sharing)
 
 # Citation
 
