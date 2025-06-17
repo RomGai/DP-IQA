@@ -4,24 +4,14 @@
 
 Abstract: *Blind image quality assessment (IQA) in the wild, which assesses the quality of images with complex authentic distortions and no reference images, presents significant challenges. Given the difficulty in collecting large-scale training data, leveraging limited data to develop a model with strong generalization remains an open problem. Motivated by the robust image perception capabilities of pre-trained text-to-image (T2I) diffusion models, we propose a novel IQA method, diffusion priors-based IQA (DP-IQA), to utilize the T2I model's prior for improved performance and generalization ability. Specifically, we utilize pre-trained Stable Diffusion as the backbone, extracting multi-level features from the denoising U-Net guided by prompt embeddings through a tunable text adapter. Simultaneously, an image adapter compensates for information loss introduced by the lossy pre-trained encoder. Unlike T2I models that require full image distribution modeling, our approach targets image quality assessment, which inherently requires fewer parameters. To improve applicability, we distill the knowledge into a lightweight CNN-based student model, significantly reducing parameters while maintaining or even enhancing generalization performance. Experimental results demonstrate that DP-IQA achieves state-of-the-art performance on various in-the-wild datasets, highlighting the superior generalization capability of T2I priors in blind IQA tasks. To our knowledge, DP-IQA is the first method to apply pre-trained diffusion priors in blind IQA.*
 
-**The paper is still under review, we are temporarily releasing only a simple demo and a sample checkpoint trained on the KonIQ-10k dataset. The complete code and checkpoints are ready and will be uploaded immediately upon acceptance of the paper.**
-
 # Preparation
-We recommend installing 64-bit Python 3.8 and [PyTorch 1.12.0](https://pytorch.org/get-started/locally/). On a CUDA GPU machine, the following will do the trick:
+We recommend installing 64-bit Python 3.11 and PyTorch 2.6.0. On a CUDA GPU machine, the following will do the trick:
 
 ```
-pip install transformers==4.31.0
-pip install torchvision
-pip install ftfy
-pip install einops
-pip install scipy
-pip install pandas
-pip install sklearn
-pip install onnxruntime-gpu
-pip install onnx
+pip install -r requirements.txt
 ```
 
-We have done all testing and development using an A100 GPU. But for this demo, any GPU that supports CUDA is enough.
+We have done all testing and development using an A100 GPU.
 
 **Download dataset**
 
