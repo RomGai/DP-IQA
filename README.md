@@ -35,7 +35,7 @@ We have done all testing and development using an A100 GPU.
 python gene_text_embedding.py
 ```
 
-2. Train DP-IQA models. Modify the 'dataset_name' variable to load different datasets.
+2. Train DP-IQA models. Modify the 'dataset_name' variable to load different datasets
 
 ```
 train_dpiqa.py
