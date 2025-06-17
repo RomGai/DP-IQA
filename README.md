@@ -28,16 +28,23 @@ We have done all testing and development using an A100 GPU.
 **SPAQ.** Please refer to [Perceptual Quality Assessment of Smartphone Photography](https://github.com/h4nwei/SPAQ). Make sure the root path of its .xlsx file is 'data/spaq/MOS and Image attribute scores.xlsx', and the root path of images is 'data/spaq/SPAQ/TestImage' in your project.
 
 # Train
-Testing on KonIQ-10k dataset:
+
+1. Generate conditional text embeddings
 
 ```
-python koniq_demo.py
+python gene_text_embedding.py
 ```
 
-For zero-shot testing on CLIVE dataset:
+2. Train DP-IQA models.
 
 ```
-python koniq_zeroshot_demo.py
+train_dpiqa.py
+```
+
+3. Train student models.
+
+```
+train_student.py
 ```
 
 # Checkpoints
