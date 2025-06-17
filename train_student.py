@@ -12,7 +12,7 @@ from torch.utils.data import DataLoader
 import gc
 from torch.cuda.amp import autocast, GradScaler
 
-dataset_name="koniq" #koniq, clive, livefb, spaq; live, tid2013, kadid, csiq
+dataset_name="koniq" #koniq, clive, livefb, spaq
 
 device="cuda"
 scaler = GradScaler()
