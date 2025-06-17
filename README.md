@@ -13,6 +13,9 @@ pip install -r requirements.txt
 
 We have done all testing and development using an A100 GPU.
 
+**Download required files**
+[CLIP](https://github.com/openai/CLIP). Place the **"clip"** folder in this project.
+
 **Download dataset**
 
 Download the [KonIQ-10k](https://osf.io/hcsdy/) dataset (OSF Storage -> database -> 1024x768). Make sure the path of its .csv file is '/koniq/koniq10k_distributions_sets.csv', and the root path of images is 'koniq/1024x768' in your project.
