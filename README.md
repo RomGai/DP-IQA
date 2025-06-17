@@ -14,21 +14,20 @@ pip install -r requirements.txt
 We have done all testing and development using an A100 GPU.
 
 **Download required files**
+
 [CLIP](https://github.com/openai/CLIP). Place the **"clip"** folder in this project.
 
-**Download dataset**
+**Download datasets**
 
-Download the [KonIQ-10k](https://osf.io/hcsdy/) dataset (OSF Storage -> database -> 1024x768). Make sure the path of its .csv file is '/koniq/koniq10k_distributions_sets.csv', and the root path of images is 'koniq/1024x768' in your project.
+**KonIQ-10k.** Download the [KonIQ-10k](https://osf.io/hcsdy/) dataset (OSF Storage -> database -> 1024x768). Make sure the path of its .csv file is 'data/koniq/koniq10k_distributions_sets.csv', and the root path of images is 'data/koniq/1024x768' in your project.
 
-For zero-shot testing, please download the [CLIVE](https://live.ece.utexas.edu/research/ChallengeDB/index.html) dataset. Make sure the root path of its .mat files is 'clive/ChallengeDB_release/Data', and the root path of images is 'clive/ChallengeDB_release/Images' in your project.
+**CLIVE.** Download the [CLIVE](https://live.ece.utexas.edu/research/ChallengeDB/index.html) dataset. Make sure the root path of its .mat files is 'data/ChallengeDB_release/Data', and the root path of images is 'data/ChallengeDB_release/Images' in your project.
 
-**Download checkpoint**
+**LIVEFB.** Please refer to [FLIVE-dataset](https://github.com/niu-haoran/FLIVE_Database/tree/master). Make sure the root path of its .csv file is 'data/livefb_database/labels_image.csv', and the root path of images is 'data/livefb_database' in your project.
 
-Put [DP-IQA (student model trained on KonIQ-10k)](https://drive.google.com/file/d/1PNznQU-vuS2ThA6tWT-fy3DmzPIuJRTN/view?usp=drive_link) to '/trained_models'.
+**SPAQ.** Please refer to [Perceptual Quality Assessment of Smartphone Photography](https://github.com/h4nwei/SPAQ). Make sure the root path of its .xlsx file is 'data/spaq/MOS and Image attribute scores.xlsx', and the root path of images is 'data/spaq/SPAQ/TestImage' in your project.
 
-The checkpoint provided in the demo is in .onnx format and therefore does not include the code that defines the model. The code of models' definition will be uploaded along with the conventional format (e.g., .pth) checkpoints after the paper is accepted.
-
-# Run this demo
+# Train
 Testing on KonIQ-10k dataset:
 
 ```
@@ -40,6 +39,9 @@ For zero-shot testing on CLIVE dataset:
 ```
 python koniq_zeroshot_demo.py
 ```
+
+# Checkpoints
+
 
 # Citation
 
