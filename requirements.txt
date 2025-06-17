@@ -1,15 +1,15 @@
-pip install taming-transformers
-pip install clip
-pip install ftfy
-pip install omegaconf
-pip install einops
-pip install torchmetrics
-pip install pytorch-lightning
-pip install kornia
-pip install diffusers==0.24.0
-pip install accelerate
-pip install rawpy
-pip install timm
-pip install torchvision
-pip install transformers==4.31.0
-pip install huggingface_hub==0.24.0
+taming-transformers
+clip
+ftfy
+omegaconf
+einops
+torchmetrics
+pytorch-lightning
+kornia
+diffusers==0.24.0
+accelerate
+rawpy
+timm
+torchvision
+transformers==4.31.0
+huggingface_hub==0.24.0
