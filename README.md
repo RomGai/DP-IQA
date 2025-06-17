@@ -47,7 +47,7 @@ train_dpiqa.py
 train_student.py
 ```
 
-Please note that, to reduce the overall runtime of the 'train_dpiqa.py' script, validation is set by default to occur after each training epoch. However, due to the small batch size, the model undergoes frequent updates within each epoch, often reaching its optimal performance midway through a certain epoch, followed by a slight decline in performance. To ensure the best model is captured, it is recommended to perform validation every 250 training steps or fewer steps.
+Please note that, to reduce the overall runtime of the 'train_dpiqa.py' script, validation is set by default to occur after each training epoch. However, due to the small batch size, the model undergoes frequent updates within each epoch, often reaching its optimal performance midway through a certain epoch, followed by a slight decline in performance. To ensure the best model is captured, it is recommended to perform validation every 250 training steps or fewer.
 
 # Checkpoints
 
