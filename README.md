@@ -19,7 +19,7 @@ We have done all testing and development using an A100 GPU.
 
 **Download datasets**
 
-**KonIQ-10k.** Download the [KonIQ-10k](https://osf.io/hcsdy/) dataset (OSF Storage -> database -> 1024x768). Make sure the path of its .csv file is 'data/koniq/koniq10k_distributions_sets.csv', and the root path of images is 'data/koniq/1024x768' in your project.
+**KonIQ-10K.** Download the [KonIQ-10k](https://osf.io/hcsdy/) dataset (OSF Storage -> database -> 1024x768). Make sure the path of its .csv file is 'data/koniq/koniq10k_distributions_sets.csv', and the root path of images is 'data/koniq/1024x768' in your project.
 
 **CLIVE.** Download the [CLIVE](https://live.ece.utexas.edu/research/ChallengeDB/index.html) dataset. Make sure the root path of its .mat files is 'data/ChallengeDB_release/Data', and the root path of images is 'data/ChallengeDB_release/Images' in your project.
 
@@ -49,6 +49,13 @@ train_student.py
 
 # Checkpoints
 
+**KonIQ-10K** [[DP-IQA]](https://drive.google.com/file/d/18G9bcCogpTGXy1VZnBKOxQT8aXnhHNKB/view?usp=sharing) [[Student]](https://drive.google.com/file/d/1j8P0eoJDLWbQgjZ4jIat8ZScgDaT1O11/view?usp=sharing)
+
+**LIVEC** [[DP-IQA]](https://drive.google.com/file/d/19EimoPFyV5lUIMCnafmw0ZQXq_Ck_-Y8/view?usp=sharing) [[Student]](https://drive.google.com/file/d/1OpeTcuzAnvY3Xq1JncAITvK08VhVJoZQ/view?usp=sharing)
+
+**LIVEFB** [[DP-IQA]](https://drive.google.com/file/d/1-dYKKIavLky_CELMahEhbcuNdR6dYO46/view?usp=sharing) [[Student]](https://drive.google.com/file/d/1jxByr3HFOlf3OplcdgTTZSOI14WsuCF1/view?usp=sharing)
+
+**SPAQ** [[DP-IQA]](https://drive.google.com/file/d/1-k-UdTp4343tiAlJB-NMQNVnXL8WC-Rk/view?usp=sharing) [[Student]](https://drive.google.com/file/d/18CK__MCTmFPr9US1Idne1mZxHLh8uNYA/view?usp=sharing)
 
 # Citation
 
