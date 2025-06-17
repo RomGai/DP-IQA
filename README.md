@@ -22,13 +22,13 @@ We have done all testing and development using an A100 GPU.
 
 **Download datasets**
 
-**KonIQ-10K.** Download the [KonIQ-10k](https://osf.io/hcsdy/) dataset (OSF Storage -> database -> 1024x768). Make sure the path of its .csv file is 'data/koniq/koniq10k_distributions_sets.csv', and the root path of images is 'data/koniq/1024x768' in your project.
+**-KonIQ-10K.** Download the [KonIQ-10k](https://osf.io/hcsdy/) dataset (OSF Storage -> database -> 1024x768). Make sure the path of its .csv file is 'data/koniq/koniq10k_distributions_sets.csv', and the root path of images is 'data/koniq/1024x768' in your project.
 
-**CLIVE.** Download the [CLIVE](https://live.ece.utexas.edu/research/ChallengeDB/index.html) dataset. Make sure the root path of its .mat files is 'data/ChallengeDB_release/Data', and the root path of images is 'data/ChallengeDB_release/Images' in your project.
+**-CLIVE.** Download the [CLIVE](https://live.ece.utexas.edu/research/ChallengeDB/index.html) dataset. Make sure the root path of its .mat files is 'data/ChallengeDB_release/Data', and the root path of images is 'data/ChallengeDB_release/Images' in your project.
 
-**LIVEFB.** Please refer to [FLIVE-dataset](https://github.com/niu-haoran/FLIVE_Database/tree/master). Make sure the root path of its .csv file is 'data/livefb_database/labels_image.csv', and the root path of images is 'data/livefb_database' in your project.
+**-LIVEFB.** Please refer to [FLIVE-dataset](https://github.com/niu-haoran/FLIVE_Database/tree/master). Make sure the root path of its .csv file is 'data/livefb_database/labels_image.csv', and the root path of images is 'data/livefb_database' in your project.
 
-**SPAQ.** Please refer to [Perceptual Quality Assessment of Smartphone Photography](https://github.com/h4nwei/SPAQ). Make sure the root path of its .xlsx file is 'data/spaq/MOS and Image attribute scores.xlsx', and the root path of images is 'data/spaq/SPAQ/TestImage' in your project.
+**-SPAQ.** Please refer to [Perceptual Quality Assessment of Smartphone Photography](https://github.com/h4nwei/SPAQ). Make sure the root path of its .xlsx file is 'data/spaq/MOS and Image attribute scores.xlsx', and the root path of images is 'data/spaq/SPAQ/TestImage' in your project.
 
 # Train
 
